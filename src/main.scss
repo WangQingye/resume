@@ -298,6 +298,7 @@ a {
     }
     .item-name {
       float: left;
+      font-weight: bold;
     }
   }
   .item-bd {
@@ -310,6 +311,7 @@ a {
     text-align: justify;
     word-break: break-all;
     line-height: 22px;
+    margin-bottom: 15px;
     em {
       display: inline-block;
       font-family: Menlo, $font-family;
