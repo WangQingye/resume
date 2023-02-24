@@ -80,7 +80,7 @@ a {
 
 .content-hd {
   width: 100%;
-  padding: 30px 50px;
+  padding: 10px 50px;
   color: #fff;
   background-color: $color-green;
   overflow: hidden;
@@ -202,7 +202,7 @@ a {
 .content-bd {
   width: 100%;
   min-height: 200px;
-  padding: 20px 30px 50px;
+  padding: 20px 30px 0px;
   overflow: hidden;
   @media screen and (max-width: 720px) {
     padding: 20px 20px 50px;
