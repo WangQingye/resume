@@ -3,11 +3,7 @@
 
 $color-gray: #d1d1d1;
 $color-green: #00b38a;
-$font-family: 'Helvetica Neue',
-Helvetica,
-Arial,
-"Microsoft YaHei",
-sans-serif;
+$font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 * {
   @include box-sizing(border-box);
@@ -16,7 +12,7 @@ sans-serif;
 
 body {
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +20,6 @@ body {
   background-color: #eee;
   overflow: auto;
   padding-top: 5px;
-
   @media screen and (max-width: 1024px) {
     padding-top: 0;
   }
@@ -43,13 +38,11 @@ a {
   width: 1000px;
   color: #bbb;
   margin-left: -500px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
-
   @media screen and (max-width: 1024px) {
     display: none;
   }
-
   @media print {
     display: none;
   }
@@ -61,13 +54,11 @@ a {
   left: 50%;
   color: #bbb;
   margin-left: -500px;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
-
   @media screen and (max-width: 1024px) {
     display: none;
   }
-
   @media print {
     display: none;
   }
@@ -76,11 +67,10 @@ a {
 .content {
   position: relative;
   width: 1024px;
-  margin: 20px auto;
+  margin: 50px auto;
   @include border-radius(5px);
   background-color: #fff;
   overflow: hidden;
-
   @media screen and (max-width: 1024px) {
     width: 100%;
     margin: 0;
@@ -94,16 +84,13 @@ a {
   color: #fff;
   background-color: $color-green;
   overflow: hidden;
-
   @media screen and (max-width: 720px) {
     padding: 25px 30px;
   }
-
   @media print {
     color: #000;
     background-color: #fff;
   }
-
   .title {
     width: 100%;
     border-bottom: 2px solid darken($color-green, 2%);
@@ -113,47 +100,32 @@ a {
     padding-bottom: 5px;
     margin-bottom: 5px;
   }
-
   .name,
   .job,
   .info,
   .contact {
     width: 50%;
-
     @media screen and (max-width: 720px) {
       width: 100%;
       text-align: center;
     }
-
-    li {
-      line-height: 25px;
-    }
-
-    a {
-      height: 50px;
-    }
   }
-
   .name {
     float: left;
-
     h1 {
       font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
       font-weight: 500;
       letter-spacing: 5px;
-
       @media screen and (max-width: 720px) {
         letter-spacing: 0;
         line-height: 1.25;
         margin-top: 10px;
       }
-
       small {
         font-weight: 400;
         letter-spacing: 0;
         font-size: 24px;
         padding-left: 10px;
-
         @media screen and (max-width: 720px) {
           display: block;
           padding-left: 0;
@@ -163,19 +135,15 @@ a {
       }
     }
   }
-
   .job {
     float: right;
     text-align: right;
-
     @media screen and (max-width: 720px) {
       text-align: center;
     }
-
     h2 {
       display: inline-block;
       font-size: 24px;
-
       @media screen and (max-width: 720px) {
         border-top: 1px solid darken($color-green, 2%);
         margin: 5px auto 0;
@@ -183,60 +151,44 @@ a {
       }
     }
   }
-
   .info {
     float: left;
-    line-height: 25px;
+    line-height: 22px;
   }
-
   .contact {
     float: right;
     text-align: right;
     padding-right: 5px;
-
     ul {
       margin: 8px 0 4px;
-
       @media screen and (max-width: 720px) {
         text-align: center;
         margin: 16px 0 0;
       }
-
-      &>li {
-        height: 25px;
-
+      & > li {
+        height: 22px;
         @media screen and (max-width: 720px) {
           display: inline-block;
         }
-
-        &>a {
+        & > a {
           color: #fff;
-
           @media print {
             color: #000;
           }
-
-          font-family: "Lucida Grande",
-          "Hiragino Sans GB",
-          "Hiragino Sans GB W3",
-          $font-family;
-          font-size: 16px;
+          font-family: "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", $font-family;
+          font-size: 14px;
           line-height: 22px;
-
           &:hover {
             color: #e8e8e8;
           }
-
           .contact-link {
             @media screen and (max-width: 720px) {
               display: none;
             }
           }
-
           .iconfont {
             fill: #fff;
             vertical-align: text-top;
-
             @media screen and (max-width: 720px) {
               margin: 5px 8px;
             }
@@ -251,45 +203,35 @@ a {
   width: 100%;
   min-height: 200px;
   padding: 20px 30px 0px;
-  line-height: 25px;
   overflow: hidden;
-
   @media screen and (max-width: 720px) {
     padding: 20px 20px 50px;
   }
-
   .content-left,
   .content-right {
-    width: 100%;
-
+    width: 50%;
     @media screen and (max-width: 1024px) {
       width: 100%;
     }
   }
-
   .content-left {
     float: left;
   }
-
   .content-right {
     float: right;
   }
-
   section {
     overflow: hidden;
     padding: 10px 15px;
   }
-
   .section-hd {
     position: relative;
     height: 32px;
-    margin: 0px 20px 20px;
+    margin: 10px auto 5px;
     overflow: hidden;
   }
-
   .section-bd {
     overflow: hidden;
-
     ul {
       li {
         margin-top: 8px;
@@ -301,7 +243,6 @@ a {
       margin-bottom: 20px;
     }
   }
-
   .section-title-l,
   .section-title-r {
     position: absolute;
@@ -312,15 +253,12 @@ a {
     vertical-align: middle;
     border-top: 1px solid #ededed;
   }
-
   .section-title-l {
     left: 0;
   }
-
   .section-title-r {
     right: 0;
   }
-
   .section-title {
     position: relative;
     z-index: 1;
@@ -334,11 +272,9 @@ a {
     text-align: center;
     background-color: #eee;
   }
-
   .section-list {
     padding: 10px 0 5px;
   }
-
   .item-hd {
     position: relative;
     padding: 10px 0 5px;
@@ -346,56 +282,40 @@ a {
     overflow: hidden;
     font-weight: 500;
     min-height: 30px;
-
     .item-time {
       display: inline-block;
       float: left;
       width: 25%;
-
       @media screen and (max-width: 720px) {
         width: 100%;
         margin-bottom: 5px;
       }
     }
-
     .item-more {
       position: absolute;
       top: 10px;
       right: 0;
     }
-
     .item-name {
       float: left;
       font-weight: bold;
-      margin-bottom: 5px;
     }
   }
-
   .item-bd {
     margin-bottom: 5px;
-
-    a {
-      font-weight: bold;
-      color: #333;
-      font-size: 16px;
-      margin: 50px 0;
-    }
   }
-
   .item-des {
     margin-bottom: 16px;
   }
-
   .section-content {
     text-align: justify;
     word-break: break-all;
-    line-height: 25px;
+    line-height: 22px;
     margin-bottom: 15px;
-
     em {
       display: inline-block;
       font-family: Menlo, $font-family;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 14px;
       border: 1px solid $color-gray;
       @include border-radius(3px);
@@ -403,10 +323,9 @@ a {
       padding: 0 3px;
       background-color: #f7f7f7;
     }
-
     strong {
       font-family: $font-family;
-      font-size: 16px;
+      font-size: 12px;
       line-height: 14px;
       border: 1px solid #f3f3f3;
       @include border-radius(3px);
@@ -417,7 +336,6 @@ a {
       background-color: #f6f6f6;
     }
   }
-
   .practice {
     .item-time {
       width: 100%;
@@ -432,10 +350,9 @@ a {
   border-radius: 3px;
   color: $color-green;
   font-family: Menlo, $font-family;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   text-align: center;
-
   &:hover {
     color: #fff;
     background-color: $color-green;
@@ -449,7 +366,6 @@ a {
     display: inline-block;
     color: $color-gray;
     margin-bottom: 25px;
-
     @media screen and (max-width: 1024px) {
       margin-top: 25px;
     }
@@ -457,20 +373,5 @@ a {
 
   @media print {
     display: none;
-  }
-}
-
-b {
-  font-weight: bold;
-}
-
-.links {
-  a {
-    color: $color-green !important;
-    font-weight: normal !important;
-    margin: 0 !important;
-  }
-  p {
-    margin: 10px;
   }
 }
